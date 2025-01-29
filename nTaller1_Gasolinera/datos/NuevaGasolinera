@@ -1,0 +1,13 @@
+tipo:Allinol:3500:2000.0
+tipo:ACPM:4750:750.5
+tipo:Extra:7500:1000.0
+tipo:Corriente:5000:1000.0
+surtidor:Jimmy Neutron:Allinol:0.0:ACPM:0.0:Extra:0.0:Corriente:0.0
+surtidor:Hal Jordan:Allinol:0.0:ACPM:0.0:Extra:0.0:Corriente:0.0
+surtidor:Timmy Turner:Allinol:0.0:ACPM:0.0:Extra:0.0:Corriente:0.0
+surtidor:Hal Jordan:Allinol:0.0:ACPM:0.0:Extra:0.0:Corriente:0.0
+empleado:Jimmy Neutron:0
+empleado:Timmy Turner:0
+empleado:Hal Jordan:0
+empleado:Peter Parker:0
+empleado:Wilson Higgsbury:0
