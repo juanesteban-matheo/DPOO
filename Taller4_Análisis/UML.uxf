@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>10</y>
+      <w>400</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+Principal
+--
++ explorarPeliculas(String, HashMap&lt;Título, Película&gt;): void
++ seleccionarFunciones(): void
++ reservarAsientos(): void
+# supervisarHorariosCine(): void
+# supervisarVentaBoletos(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>210</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Cine
+--
+- nombre: String
+- direccion: String
+- listaSalas: ArrayList&lt;Sala&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>130</y>
+      <w>110</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+ lista de cines
+ 1...*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>370</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Sala
+--
+- numeroSala: int
+- capacidad: int
+- tipoTecnologia: ArrayList&lt;String&gt;
+- listaAsientos: ArrayList&lt;Asiento&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>290</y>
+      <w>150</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+ lista de salas; 1...*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>570</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Asiento
+--
+numeroAsiento: int
+- numeroFila: int
+- tipoAsiento: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>460</y>
+      <w>130</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+ lista de asientos
+ 1...*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>330</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Función
+--
+- fechaFuncion: String
+- horaFuncion: String
+- salaFuncion: Sala
+--
++ explorarFunciones(): void
++ comprarAsientos(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>0</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>240</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lista de funciones; 1...*</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0;200.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>510</y>
+      <w>230</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Núcleo&gt;&gt;
+Película
+--
+- título: String
+- genero: String
+- duracion: int
+- clasificacion: int
+- fechaEstreno: String
+- nombreDirector: String
+- nombreActores: ArrayList&lt;String&gt;
+- tematica: String
+- tecnicaAnimacion: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>440</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+ lista de películas; 1...*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>750</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Documental
+--
+- narrador: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>700</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>370</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Cliente
+--
+- tipoTargeta: String
+- monto: int
+- fechaTransaccion: String
+- cantidadSillas: int
+--
+- realizarPago( Pago ): void
+- programaLealtad( int, int ): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>240</y>
+      <w>270</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lista de clientes: 0...*</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>430</y>
+      <w>120</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+Pagos; 0...*</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>570</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Pago
+--
+- tipoTarjeta: String
+- monto: int
+- fechaTransaccion: String
+- cantidadSillas: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>560</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Empleado
+--
+# gestionarHorario(): void
+# gestionarFunciones(): void
+# gestionarPeliculas(): void
+# gestionarSalas(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>370</x>
+      <y>500</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>
