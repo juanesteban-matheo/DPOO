@@ -1,0 +1,10 @@
+Cliente: John Doe
+Dirección: 45th Wall Street
+----------------
+uniandes.dpoo.hamburguesas.mundo.ProductoMenu@26425897    +tocineta express                2500    -queso fundido            21000
+papas grandes
+            6900
+----------------
+Precio Neto:  27900
+IVA:          5301
+Precio Total: 33201
